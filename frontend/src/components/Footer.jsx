@@ -4,7 +4,7 @@ import logo from '../assets/logo.svg'
 
 const Footer = () => {
   return (
-    <div className='bg-[#E6EFED] py-12  border-gray-200'>
+    <div className='bg-[#E6EFED] py-12 border border-2xl border-gray-200'>
       <div className='max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12'>
 
         {/* Left Section */}
@@ -25,10 +25,10 @@ const Footer = () => {
         <div className='max-w-[200px] mx-auto text-left'>
           <h3 className="text-md font-semibold mb-4 text-gray-800">Quick Links</h3>
           <ul className='space-y-3 text-sm text-gray-600'>
-            <li><Link to="/call-for-papers" className='hover:text-green-600 transition'>Call For Papers</Link></li>
-            <li><Link to="/editorial" className='hover:text-green-600 transition'>Editorial Board</Link></li>
-            <li><Link to="/publication-charges" className='hover:text-green-600 transition'>Publication Charges</Link></li>
-            <li><Link to="/contact" className='hover:text-green-600 transition'>Contact Us</Link></li>
+            <li><Link to="/call-for-papers" className='hover:text-[#054c38] transition'>Call For Papers</Link></li>
+            <li><Link to="/editorial" className='hover:text-[#054c38] transition'>Editorial Board</Link></li>
+            <li><Link to="/publication-charges" className='hover:text-[#054c38 ] transition'>Publication Charges</Link></li>
+            <li><Link to="/contact" className='hover:text-[#054c38] transition'>Contact Us</Link></li>
           </ul>
         </div>
 

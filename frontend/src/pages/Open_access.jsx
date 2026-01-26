@@ -38,27 +38,30 @@ const Open_access = () => {
         </div>
         {/* STATS CARD */}
         <div className='mt-16'>
-            <div className='bg-[#EAF3F0] rounded-3xl border border-[#B2CDC6] px-6 py-10 h-[250px] w-full'>
-                <div className='grid grid-cols-1 md:grid-cols-3 text-center gap-8 h-full place-items-center'>
+            <div className='bg-[#EAF3F0] rounded-3xl border border-[#B2CDC6] h-[250px] px-6 py-6 w-full'>
+                <div className='max-w-4xl mx-auto'>
+
+                    <div className='grid grid-cols-1 md:grid-cols-3 text-center gap-6 pt-15 '>
                     {/* Card 1 */}
-                    <div>
-                        <h2 className='text-4xl font-bold text-[#065F46]' style={{ fontFamily: '"Times New Roman, Times, serif'}}>1k+</h2>
-                        <p className='text-[#3E836F] font-medium mt-2'> 
+                        <div>
+                           <h2 className='text-4xl font-bold text-[#065F46]' style={{ fontFamily: '"Times New Roman, Times, serif'}}>1k+</h2>
+                          <p className='text-[#3E836F] font-medium mt-1'> 
                             Institutions
                         </p>
-                    </div>
-                    {/* Card 2 */}
-                    <div>
-                        <h2 className='text-4xl font-bold text-[#065F46]' style={{ fontFamily: '"Times New Roman, Times, serif'}}>7M+</h2>
-                        <p className='text-[#3E836F] font-medium mt-2'>
+                        </div>
+                       {/* Card 2 */}
+                        <div>
+                          <h2 className='text-4xl font-bold text-[#065F46]' style={{ fontFamily: '"Times New Roman, Times, serif'}}>7M+</h2>
+                          <p className='text-[#3E836F] font-medium mt-1'>
                             Users
-                        </p>
-                    </div>
-                    <div>
-                        <h2 className='text-4xl font-bold text-[#065F46]'>95%</h2>
-                        <p className='text-[#3E836F] font-medium mt-2'>
+                          </p>
+                        </div>
+                        <div>
+                          <h2 className='text-4xl font-bold text-[#065F46]'>95%</h2>
+                          <p className='text-[#3E836F] font-medium mt-1'>
                             Reproducibility Rate
-                        </p>
+                          </p>
+                        </div>
                     </div>
                 </div>
             </div>

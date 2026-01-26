@@ -32,16 +32,16 @@ const Home = () => {
 
   return (
     <div>
-      <div className='min-h-screen bg-white flex items-center px-12'>
+      <div className='bg-white flex items-start px-12'>
         {/* ==== Left Section ==== */}
-        <div className='w-1/2 text-[#065F46] space-y-6'>
+        <div className='w-1/2 mt-7 font-bold text-[#065F46] space-y-6'>
         {/* ISSN Badge */}
         <div className='inline-flex items-center px-4 py-1 rounded-full bg-[#D1FAE5] text-bold'>
         ISSN: 1004-4523 • VOLUME 25 ISSUE 12
         </div>
 
         {/* Heading */}
-        <h1 className='text-5xl font-serif leading-tight text-[#0F172A]'>
+        <h1 className='text-6xl font-bold font-serif leading-tight text-[#0F172A]'>
           Advancing the{" "}
           <br />
           <span className='italic text-[#065F46]'>Science of</span>
@@ -61,7 +61,7 @@ const Home = () => {
         <div className='flex gap-4 pt-4'>
           <button
           onClick={()=> navigate('/contact')}
-          className='border border-[#065F46] text-[#065F46] hover:bg-[#065F46] hover:text-white transition px-6 py-3 rounded-lg font-medium'>
+          className='border border-[#065F46] text-[#065F46] bg-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium'>
             Manuscript Submission
           </button>
 
@@ -75,7 +75,7 @@ const Home = () => {
 
         {/* Right Section */}
         <div className='w-1/2 flex justify-center'>
-        <img src={Hero} alt="Journal of Engineering Technology Card" className='max-w-md drop-shadow-2xl' />
+        <img src={Hero} alt="Journal of Engineering Technology Card" className='w-[420px] h-auto lg:w-[520px] xl:w-[600px] drop-shadow-2xl' />
         </div>
 
       </div>
@@ -85,7 +85,7 @@ const Home = () => {
           Aim and Scope
         </h1>
         <br />
-        <p className='text-[#065F46] text-lg md:text-xl leading-relaxed font-small'>
+        <p className='text-[#065F46] text-md md:text-xl leading-relaxed font-small'>
         The Journal of Engineering and Technology aims to provide a
           high-quality, peer-reviewed platform for the publication of original
           research, review articles, and technical papers in the broad fields of
@@ -122,7 +122,7 @@ const Home = () => {
       <div className='w-full bg-white py-12'>
         <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4'>
           {features.map((item, index) => (
-            <div key={index} className='bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition'>
+            <div key={index} className='bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition'>
               {/* Icon Space */}
               <div className='w-12 h-12 mb-6 flex items-center justify-center rounded-lg bg-gray-100'>
                 <img src={item.icon} alt="" className='w-8 h-8 object-contain' />

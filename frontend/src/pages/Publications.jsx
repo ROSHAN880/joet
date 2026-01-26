@@ -8,7 +8,7 @@ const Publications = () => {
         style={{
           fontFamily: "Times New Roman",
           fontWeight: "bold",
-          fontSize: "60px",
+          fontSize: "50px",
         }}
       >
         Publication Ethics And Policies
@@ -80,11 +80,11 @@ const Publications = () => {
 const Section = ({ title, children }) => (
   <div className="mb-6">
     <h2
-      className="mb-2 tracking-[2px]"
+      className="mb-2 tracking-[1px]"
       style={{
         fontFamily: "Times New Roman",
-        fontWeight: "bold",
-        fontSize: "48px",
+        fontWeight: "semibold",
+        fontSize: "32px",
       }}
     >
       {title}

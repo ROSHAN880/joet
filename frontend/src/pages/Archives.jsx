@@ -39,7 +39,7 @@ const Archives = () => {
         <button
         key={issue.id}
         onClick={() => navigate(`/current_issue/${selectedYear}/${issue.id}`)}
-        className="bg-[#065F46] text-white px-4 py-2 rounded-md hover:bg-green-800"
+        className="bg-[#065F46] text-white px-4 py-2 rounded-md hover:bg-[#054c38 ]"
         >
         {issue.title}
        </button>

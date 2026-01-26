@@ -32,9 +32,9 @@ const Navbar = () => {
 
   {/* LOGO (left) */}
   <div onClick={()=> navigate('/')} className="flex items-center gap-2">
-    <img src={logo} alt="JOET Logo" className="h-8 w-8 object-contain" />
-    <span className="text-sm font-medium tracking-wide">
-      JOET <p><span className="text-gray-500">Engineering Journal</span></p>
+    <img src={logo} alt="JOET Logo" className="h-13 w-13 object-contain" />
+    <span className="text-lg font-medium tracking-wide">
+      JOET <p><span className="text-gray-500 text-lg">Engineering Journal</span></p>
     </span>
   </div>
 
@@ -47,7 +47,7 @@ const Navbar = () => {
     return (
       <div key="about" className="relative group">
         {/* About + arrow */}
-        <div className="inline-flex items-center gap-1 text-sm cursor-pointer text-gray-700 group-hover:text-black">
+        <div className="inline-flex items-center gap-1 text-lg cursor-pointer text-gray-700 group-hover:text-black">
           About
           <img src={dropdown} className="w-3 h-3 opacity-70" />
         </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
         {/* DROPDOWN */}
         <div className="absolute left-0 mt-2 w-56 rounded-md border border-black/20 bg-white/90 backdrop-blur-sm shadow-lg
                         opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                        transition-all duration-100">
+                        transition-all duration-100 z-50">
           <ul className="py-2">
             {aboutMenu.map(item => (
               <li key={item.to}>
@@ -80,7 +80,7 @@ const Navbar = () => {
       key={link.to}
       to={link.to}
       className={({ isActive }) =>
-        `inline-flex items-center text-sm transition ${
+        `inline-flex items-center text-lg transition ${
           isActive
             ? "text-green-700 font-semibold"
             : "text-gray-700 hover:text-black"
@@ -96,7 +96,7 @@ const Navbar = () => {
 
     <NavLink
       to="/contact"
-      className="border border-green-700 rounded-full px-4 py-1 text-sm font-medium text-white bg-[#065F46]"
+      className="border border-green-700 rounded-full px-4 py-1 text-lg font-medium text-white bg-[#065F46]"
     >
       Contact
     </NavLink>
