@@ -4,7 +4,6 @@ import GoogleScholar from '../assets/GoogleScholar.svg'
 import crossDEfdoi from '../assets/crossDEfdoi.svg'
 import CiteFactor from '../assets/CiteFactor.svg'
 import archives from '../assets/archives.png'
-import Vector from '../assets/Vector.png'
 import Archives from './Archives'
 import { useNavigate } from 'react-router-dom'
 
@@ -25,7 +24,7 @@ const Indexing = () => {
         <div className="flex gap-4 mb-10">
           <button 
            onClick={()=> navigate('/contact')}
-           className="border border-[#065F46] bg-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium">
+           className="border border-[#065F46] hover:text-[#065F46] hover:bg-white bg-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium">
           <img src="" alt="" />  Manuscript Submission
           </button>
           <button 

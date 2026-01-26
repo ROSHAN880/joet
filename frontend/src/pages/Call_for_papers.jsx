@@ -17,7 +17,7 @@ const Call_for_papers = () => {
             <div className="flex gap-4 mb-10">
             <button 
             onClick={()=> navigate('/contact')}
-            className="border border-[#065F46] text-[#065F46] bg-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium">
+            className="border border-[#065F46] hover:bg-white hover:text-[#065F46] bg-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium">
             <img src="" alt="" />  Manuscript Submission
             </button>
             <button 

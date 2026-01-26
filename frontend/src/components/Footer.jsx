@@ -36,7 +36,7 @@ const Footer = () => {
         <div className='max-w-[200px] mx-auto text-left'>
           <h3 className="text-md font-semibold mb-4 text-gray-800">Legal</h3>
           <ul className='space-y-3 text-sm text-gray-600'>
-            <li><Link to="/publications" className='hover:text-green-600 transition'>Privacy Policy</Link></li>
+            <li><Link to="/publications" className='hover:text-[#054c38] transition'>Privacy Policy</Link></li>
             {/* <li><Link to="" className='hover:text-green-600 transition'>Ethics Statement</Link></li>
             <li><Link to="/publications" className='hover:text-green-600 transition'>Terms of Service</Link></li> */}
           </ul>

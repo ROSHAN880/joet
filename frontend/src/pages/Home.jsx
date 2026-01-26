@@ -8,6 +8,7 @@ import paperFormat from '../assets/paperFormat.png'
 import useradd from '../assets/useradd.png'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import Vector from '../assets/Vector.png'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -61,7 +62,7 @@ const Home = () => {
         <div className='flex gap-4 pt-4'>
           <button
           onClick={()=> navigate('/contact')}
-          className='border border-[#065F46] text-[#065F46] bg-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium'>
+          className='border border-[#065F46] bg-[#065F46] hover:bg-white hover:text-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium'>
             Manuscript Submission
           </button>
 
@@ -147,7 +148,7 @@ const Home = () => {
           <div className='grid sm:grid-cols-2 gap-6'>
             {/* Scopus Index */}
             <div className='bg-white text-gray-700 rounded-2xl flex flex-col items-center justify-center text-center h-48 shadow-2xl'>
-              <div className='text-4xl mb-3'>🔍</div>
+              <div className='text-4xl mb-3'><img src={Vector} alt="" /></div>
               <p className='font-semibold tracking-wide'>SCOPUS INDEX</p>
             </div>
 
@@ -165,7 +166,7 @@ const Home = () => {
 
             {/* Global Reach */}
             <div className='bg-white text-gray-700 rounded-2xl flex flex-col items-center justify-center text-center shadow-2xl'>
-              <div className='text-4xl mb-3 justify-between'>🌍</div>
+              <div className='text-4xl mb-3 justify-between'></div>
               <p className='font-semibold tracking-wide'>GLOBAL REACH</p>
             </div>
           </div>
