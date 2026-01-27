@@ -9,6 +9,9 @@ import useradd from '../assets/useradd.png'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import Vector from '../assets/Vector.png'
+import Global from '../assets/Global.png'
+import manu from '../assets/manu.png'
+import archives from '../assets/archives.png'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -62,14 +65,14 @@ const Home = () => {
         <div className='flex gap-4 pt-4'>
           <button
           onClick={()=> navigate('/contact')}
-          className='border border-[#065F46] bg-[#065F46] hover:bg-white hover:text-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium'>
-            Manuscript Submission
+          className='border border-[#065F46] flex flex-items bg-[#065F46] hover:bg-white hover:text-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium'>
+           <img className='pr-2 ' src={manu} alt="" /> Manuscript Submission
           </button>
 
           <button 
           onClick={()=> navigate('/archives')}
-          className='border border-[#065F46] text-[#065F46] hover:bg-[#065F46] hover:text-white transition px-6 py-3 rounded-lg font-medium'>
-            Browse Archives
+          className='border border-[#065F46] flex flex-items text-[#065F46] hover:bg-[#065F46] hover:text-white transition px-6 py-3 rounded-lg font-medium'>
+          <img className='pr-2' src={archives} alt="" /> Browse Archives
           </button>
         </div>
         </div>
@@ -141,37 +144,37 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='w-full bg-white text-white py-16 px-6'>
+       <div className='w-full bg-white text-white py-16 px-6'>
         <div className='max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center'>
 
-          {/* Left Cards */}
+          
           <div className='grid sm:grid-cols-2 gap-6'>
-            {/* Scopus Index */}
+           
             <div className='bg-white text-gray-700 rounded-2xl flex flex-col items-center justify-center text-center h-48 shadow-2xl'>
               <div className='text-4xl mb-3'><img src={Vector} alt="" /></div>
               <p className='font-semibold tracking-wide'>SCOPUS INDEX</p>
             </div>
 
-            {/* Since 2001 */}
+            
             <div className='bg-[#0F172A] from-slate-900 to-slate-800 rounded-2xl flex flex-col items-start justify-center h-48 px-6 shadow-md'>
               <p className='text-sm uppercase text-gray-300'>Since</p>
               <h2 className='text-4xl mt-1' style={{ fontFamily: "Prata"}}>2001</h2>
             </div>
 
-            {/* Frequency */}
+           
             <div className='bg-[#065F46] rounded-2xl flex flex-col items-start justify-center h-48 px-6 shadow-md sm:col-span-1'>
               <p className="uppercase text-sm text-emerald-200">Frequency</p>
               <h2 className="text-3xl  mt-1" style={{ fontFamily: "Prata"}}>Monthly</h2>
             </div>
 
-            {/* Global Reach */}
+            
             <div className='bg-white text-gray-700 rounded-2xl flex flex-col items-center justify-center text-center shadow-2xl'>
-              <div className='text-4xl mb-3 justify-between'></div>
+              <div className='text-4xl mb-3 justify-between'><img src={Global} alt="" /></div>
               <p className='font-semibold tracking-wide'>GLOBAL REACH</p>
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
+          
           <div className='space-y-6'>
             <h1 className='text-3xl lg:text-4xl text-[#0F172A]' style={{ fontFamily: "'Times New Roman, Times, serif"}}> 
               A Trusted Hub For Global Research
@@ -218,14 +221,14 @@ const Home = () => {
           </div>
         </div>
 
-      </div>
+      </div> 
 
       <div className='bg-[#0F172A] flex flex-col items-center'>
         <h1 className='text-white text-4xl pt-20 text-center ' style={{fontFamily: "'Times New Roman, Times, serif"}}>Author Resources & Forms</h1>
         <div className='mt-16 grid grid-cols-3 gap-10 mb-30'>
 
         {/* Card 1 */}
-        <div className='bg-[#333A4A] w-80 h-44 rounded-2xl flex flex-col items-center justify-center shadow-lg border border-gray-700'>
+        <div className='bg-[#1B2335] hover:bg-[#333A4A] w-80 h-44 rounded-2xl flex flex-col items-center justify-center shadow-lg border border-gray-700'>
           {/* Icon Placeholder */}
           <div className='w-10 h-10 mb-3'>
             <img src={paperFormat} alt="paperFormat" />
@@ -236,7 +239,7 @@ const Home = () => {
           <p className='text-gray-400 text-sm '>Doc Template</p>
         </div>
         {/* Card 2 */}
-        <div className='bg-[#333A4A] w-80 h-44 rounded-2xl flex flex-col items-center justify-center shadow-lg border border-gray-700'>
+        <div className='bg-[#1B2335] hover:bg-[#333A4A] w-80 h-44 rounded-2xl flex flex-col items-center justify-center shadow-lg border border-gray-700'>
           <div className='w-10 h-10 mb-3'>
             <img src={copyright} alt="CopyRight" />
           </div>
@@ -247,7 +250,7 @@ const Home = () => {
         </div>
 
         {/* Card 3 */}
-        <div className='bg-[#333A4A] w-80 h-44 rounded-2xl flex flex-col items-center justify-center shadow-lg border border-gray-700'>
+        <div className='bg-[#1B2335] hover:bg-[#333A4A] w-80 h-44 rounded-2xl flex flex-col items-center justify-center shadow-lg border border-gray-700'>
           <div className='w-10 h-10 mb-3'>
             <img src={useradd} alt="" />
           </div>

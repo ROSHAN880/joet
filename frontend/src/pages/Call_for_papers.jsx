@@ -1,5 +1,7 @@
 import React from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
+import manu from '../assets/manu.png'
+import archives from '../assets/archives.png'
 
 const Call_for_papers = () => {
     const navigate = useNavigate();
@@ -17,13 +19,13 @@ const Call_for_papers = () => {
             <div className="flex gap-4 mb-10">
             <button 
             onClick={()=> navigate('/contact')}
-            className="border border-[#065F46] hover:bg-white hover:text-[#065F46] bg-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium">
-            <img src="" alt="" />  Manuscript Submission
+            className="border border-[#065F46] flex flex-items hover:bg-white hover:text-[#065F46] bg-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium">
+            <img className='pr-2' src={manu} alt="" />  Manuscript Submission
             </button>
             <button 
             onClick={()=> navigate('/archives')}
-            className="border border-[#065F46] text-[#065F46] hover:bg-[#065F46] hover:text-white transition px-6 py-3 rounded-lg font-medium">
-            Browse Archives
+            className="border border-[#065F46] flex flex-items text-[#065F46] hover:bg-[#065F46] hover:text-white transition px-6 py-3 rounded-lg font-medium">
+            <img className='pr-2' src={archives} alt="" /> Browse Archives
             </button>
             </div>
 

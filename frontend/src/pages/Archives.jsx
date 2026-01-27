@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const years = [2025, 2024, 2023, 2022]
+const years = [2026, 2025, 2024, 2023, 2022]
 
 const  getIssuesForYear = (year) => {
   const volume = year % 100;
@@ -38,7 +38,6 @@ const Archives = () => {
        {issues.map(issue => (
         <button
         key={issue.id}
-        onClick={() => navigate(`/current_issue/${selectedYear}/${issue.id}`)}
         className="bg-[#065F46] text-white px-4 py-2 rounded-md hover:bg-[#054c38 ]"
         >
         {issue.title}

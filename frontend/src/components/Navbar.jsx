@@ -11,7 +11,7 @@ const Navbar = () => {
   const links = [
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
-    { to: "/current_issue", label: "Current issue" },
+    { to: "/current-issue/26/1", label: "Current issue" },
     { to: "/archives", label: "Archives" },
     { to: "/editorial", label: "Editorial" },
     { to: "/publications", label: "Publication Ethics" },
@@ -47,7 +47,7 @@ const Navbar = () => {
     return (
       <div key="about" className="relative group">
         {/* About + arrow */}
-        <div className="inline-flex items-center gap-1 text-lg cursor-pointer text-gray-700 group-hover:text-black">
+        <div className="inline-flex items-center  gap-1 text-lg cursor-pointer text-gray-700 group-hover:text-black">
           About
           <img src={dropdown} className="w-3 h-3 opacity-70" />
         </div>
@@ -61,7 +61,7 @@ const Navbar = () => {
               <li key={item.to}>
                 <NavLink
                   to={item.to}
-                  className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block px-3 py-2 text-sm text-gray-700 hover:bg-[#D1FAE5]"
                 >
                   {item.label}
                 </NavLink>

@@ -22,7 +22,7 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/archives' element={<Archives />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/current_issue/:year/:issue' element={<Current_issue />} />
+        <Route path='/current-issue/:year/:issue' element={<Current_issue />} />
         <Route path='/editorial' element={<Editorial />} />
         <Route path='/indexing' element={<Indexing />} />
         <Route path='/publications' element={<Publications />} />
