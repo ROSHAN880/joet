@@ -32,9 +32,9 @@ const App = () => {
         <Route path='/open-access' element={<Open_access />} />
         <Route path='/publication-charges' element={<Publication_charges />} />
         <Route path='/call-for-papers' element={<Call_for_papers />}/>
-        <Route path='/privacy' element={<Privacy />} />
-        <Route path='/refund' element={<Refund />} />
-        <Route path='/terms' element={<Terms />} />
+        <Route path='/privacy-policy' element={<Privacy />} />
+        <Route path='/refund-policy' element={<Refund />} />
+        <Route path='/terms-and-conditions' element={<Terms />} />
       </Routes>
       <Footer />
     </div>
