@@ -13,6 +13,9 @@ import Open_access from './pages/Open_access'
 import Publication_charges from './pages/Publication_charges'
 import Call_for_papers from './pages/Call_for_papers'
 import Footer from './components/Footer'
+import Privacy from './pages/Privacy'
+import Refund from './pages/Refund'
+import Terms from './pages/Terms'
 const App = () => {
   return (
     <div className='w-full min-h-screen'>
@@ -29,6 +32,9 @@ const App = () => {
         <Route path='/open-access' element={<Open_access />} />
         <Route path='/publication-charges' element={<Publication_charges />} />
         <Route path='/call-for-papers' element={<Call_for_papers />}/>
+        <Route path='/privacy' element={<Privacy />} />
+        <Route path='/refund' element={<Refund />} />
+        <Route path='/terms' element={<Terms />} />
       </Routes>
       <Footer />
     </div>

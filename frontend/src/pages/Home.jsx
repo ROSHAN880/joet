@@ -12,6 +12,8 @@ import Vector from '../assets/Vector.png'
 import Global from '../assets/Global.png'
 import manu from '../assets/manu.png'
 import archives from '../assets/archives.png'
+import hoverManu from '../assets/hoverManu.svg'
+import hoverArchives from '../assets/hoverArchives.png'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -65,14 +67,22 @@ const Home = () => {
         <div className='flex gap-4 pt-4'>
           <button
           onClick={()=> navigate('/contact')}
-          className='border border-[#065F46] flex flex-items bg-[#065F46] hover:bg-white hover:text-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium'>
-           <img className='pr-2 ' src={manu} alt="" /> Manuscript Submission
+          className='group border border-[#065F46] flex items-center bg-[#065F46] hover:bg-white hover:text-[#065F46] text-white transition px-6 py-3 rounded-lg font-medium'>
+          <span className='relative w-5 h-5 mr-2 flex items-center justify-center'>
+            <img className='absolute inset-0 w-full h-full object-contain block group-hover:hidden' src={manu} alt="Manuscriipt" />
+            <img className='absolute inset-0 w-full h-full object-contain hidden group-hover:block' src={hoverManu} alt="manuscript hover" /> 
+          </span>
+           Manuscript Submission
           </button>
 
           <button 
           onClick={()=> navigate('/archives')}
-          className='border border-[#065F46] flex flex-items text-[#065F46] hover:bg-[#065F46] hover:text-white transition px-6 py-3 rounded-lg font-medium'>
-          <img className='pr-2' src={archives} alt="" /> Browse Archives
+          className='group border border-[#065F46] flex items-center text-[#065F46] hover:bg-[#065F46] hover:text-white transition px-6 py-3 rounded-lg font-medium'>
+          <span className='relative w-5 h-5 mr-2 flex items-center justify-center'>
+          <img className='absolute inset-0 w-full h-full object-contain block group-hover:hidden' src={archives} alt="archives" />
+          <img className='absolute inset-0 w-full h-full object-contain hidden group-hover:block' src={hoverArchives} alt="archives hover" />
+          </span>
+           Browse Archives
           </button>
         </div>
         </div>
