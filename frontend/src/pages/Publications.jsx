@@ -80,7 +80,7 @@ const Publications = () => {
 const Section = ({ title, children }) => (
   <div className="mb-6">
     <h2
-      className="mb-2 tracking-[1px]"
+      className="mb-2 tracking-[1px] text-[#065F46]"
       style={{
         fontFamily: "Times New Roman",
         fontWeight: "semibold",
